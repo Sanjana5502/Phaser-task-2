@@ -6,13 +6,13 @@ const CenterCanvas = () => {
     const config = {
       type: Phaser.AUTO,
       parent: 'phaser-container',
-      width: 500,
+      width: 700,
       height: 500,
       physics: {
         default: 'arcade',
         arcade: {
           gravity: { y: 300 },
-          debug: false, // Set to true to enable physics debugging
+          debug: false, //can be true too
         },
       },
       scene: {
@@ -36,10 +36,10 @@ const CenterCanvas = () => {
             const button = this.add.text(x, y, text, {
               backgroundColor: '#3498db',
               padding: {
-                left: 10,
-                right: 10,
-                top: 5,
-                bottom: 5,
+                left: 8,
+                right: 8,
+                top: 1,
+                bottom: 1,
               },
             });
 
@@ -57,14 +57,14 @@ const CenterCanvas = () => {
             });
           };
 
-          this.createButton(0, 50, 'Button 1');
-          this.createButton(0, 395, 'Button 2');
-          this.createButton(50, 475, 'Button 3');
-          this.createButton(350, 475, 'Button 4');
-          this.createButton(400, 400, 'Button 5');
-          this.createButton(400, 50, 'Button 6');
-          this.createButton(50, 0, 'Button 7');
-          this.createButton(350, 0, 'Button 8');
+          this.createButton(0, 120, 'Button 1');
+          this.createButton(0, 360, 'Button 2');
+          this.createButton(150, 480, 'Button 3');
+          this.createButton(410, 480, 'Button 4');
+          this.createButton(600, 370, 'Button 5');
+          this.createButton(600, 110, 'Button 6');
+          this.createButton(150, 0, 'Button 7');
+          this.createButton(400, 0, 'Button 8');
         },
         // update: function () {
         // },
